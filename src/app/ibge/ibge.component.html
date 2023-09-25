@@ -1,0 +1,20 @@
+<mat-card (click)="toggleExpansion()">
+    <mat-card-content>
+        <mat-expansion-panel [expanded]="expanded">
+            <mat-expansion-panel-header>
+                <mat-panel-title>Federative Unit ({{ FederativeUnits.length }})</mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <button mat-raised-button class="mat-primary" *ngFor="let FU of FederativeUnits" (click)="showMunicipios(FU.sigla)">{{ FU.nome }}</button>
+            </mat-list>
+        </mat-expansion-panel>
+        <mat-expansion-panel [expanded]="FUSelectedExpanded">
+            <mat-expansion-panel-header>
+                <mat-panel-title>Cities ({{ cities.length }})</mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item *ngFor="let city of cities">{{ city.nome }}</mat-list-item>
+            </mat-list>
+        </mat-expansion-panel>
+    </mat-card-content>
+</mat-card>

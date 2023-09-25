@@ -1,0 +1,16 @@
+mat-card {
+    background-color: #424242;
+}
+
+mat-expansion-panel {
+    background-color: #424242;
+}
+
+mat-panel-title {
+    color: white;
+}
+
+button {
+    margin-right: 10px;
+    margin-bottom: 7px;
+  }
