@@ -1,0 +1,26 @@
+<header class="ibge-header">
+  <img src="img/IBGE.png" alt="IBGE" width="350px" height="69px"/>
+  <h1>IBGE</h1>
+</header>
+
+<mat-tab-group>
+  <mat-tab label="Norte">
+    <app-ibge [region]="'Norte'" [FederativeUnits]="federativeunit_By_Region['Norte']"></app-ibge>
+  </mat-tab>
+  <mat-tab label="Nordeste">
+    <app-ibge [region]="'Nordeste'" [FederativeUnits]="federativeunit_By_Region['Nordeste']"></app-ibge>
+  </mat-tab>
+  <mat-tab label="Sudeste">
+    <app-ibge [region]="'Sudeste'" [FederativeUnits]="federativeunit_By_Region['Sudeste']"></app-ibge>
+  </mat-tab>
+  <mat-tab label="Sul">
+    <app-ibge [region]="'Sul'" [FederativeUnits]="federativeunit_By_Region['Sul']"></app-ibge>
+  </mat-tab>
+  <mat-tab label="Centro-Oeste">
+    <app-ibge [region]="'Centro-Oeste'" [FederativeUnits]="federativeunit_By_Region['Centro-Oeste']"></app-ibge>
+  </mat-tab>
+</mat-tab-group>
+
+<footer>
+  <h4> Total amount of regions (5) </h4>
+</footer>

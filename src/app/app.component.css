@@ -1,0 +1,23 @@
+.ibge-header {
+    background-color: #4fa4b9;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .ibge-header img {
+    height: 40px;
+    margin-right: 10px;
+  } 
+
+  mat-tab-group {
+    background-color: #369fb9;
+  }
+
+  footer {
+    text-align: center;
+    background-color: #424242;
+    color: white;
+}
